@@ -190,7 +190,8 @@ input:focus {
        text-align: center;
    }
    
-   .zk-inputs {
+   .zk-inputs,
+   .zk-inputs1 {
        flex-direction: column;
        width: 100%;
    }

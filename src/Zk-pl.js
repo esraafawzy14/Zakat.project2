@@ -56,7 +56,7 @@ export default function Zkpl() {
   return (
     <div className="zk-container">
       <div className="zk-fitr">
-        <h2 className="zk-fitr1">حساب زكاة الزروع والثمار</h2>
+        <h2 className="zk-fitr1"> زكاة الزروع والثمار</h2>
         <p className="zk2">
           لا يراعى الحول في زكاة الزروع، بل يراعى الموسم والمحصول لقوله عز وجل: «وآتوا حقه يوم حصاده». 
           فلو أخرجت الأرض أكثر من محصول في السنة وجب على صاحبها إخراج الزكاة عن كل محصول.

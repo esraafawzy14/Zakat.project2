@@ -1,22 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Header.css';
 import { FaMoon, FaSun } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Header() {
-  const [theme, setTheme] = useState('light');
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  const [theme, setTheme] = useState(savedTheme);
+
+  useEffect(() => {
+    document.body.classList.toggle('dark', theme === 'dark');
+    document.querySelector('header')?.classList.toggle('dark', theme === 'dark');
+    document.querySelectorAll('.nav-links a').forEach(link => link.classList.toggle('dark', theme === 'dark'));
+    document.querySelector('.theme-toggle')?.classList.toggle('dark', theme === 'dark');
+  }, 
+  [theme]);
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
-    document.body.classList.toggle('dark', newTheme === 'dark');
-    document.querySelector('header').classList.toggle('dark', newTheme === 'dark');
-    const links = document.querySelectorAll('.nav-links a');
-    links.forEach(link => link.classList.toggle('dark', newTheme === 'dark'));
-    const button = document.querySelector('.theme-toggle');
-    if (button) {
-      button.classList.toggle('dark', newTheme === 'dark');
-    }
+    localStorage.setItem('theme', newTheme);
   };
 
   return (

@@ -124,7 +124,7 @@ export default function Zkani() {
   return (
     <div className="zk-container">
       <div className="zk-fitr">
-        <h2 className="zk-fitr1">حساب زكاة الأنعام</h2>
+        <h2 className="zk-fitr1"> زكاة الأنعام</h2>
         <p className="zk2">
         زكاة الأنعام أو زكاة النعم هي الزكاة الواجبة في المواشي من النعم، (الإبل، البقر، الغنم) وهي تختلف حسب نوع النعم وعددها.وتجب زكاة الأنعام إذا بلغت النعم النصاب وحال عليهاالحول
         </p>

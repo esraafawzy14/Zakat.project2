@@ -2,6 +2,8 @@
 body {
   background-color: #fff; 
   color: #333; 
+  font-family: "Cairo";
+
 }
 
 .header {
@@ -11,6 +13,9 @@ body {
   align-items: center;
   background-color: #28a745; 
   color: white; 
+}
+h1 ,h2{
+  font-family: "Tajawal";
 }
 
 .logo h1 {
